@@ -12,46 +12,45 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginLeft="30px"
-        android:layout_marginRight="30px"
 
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="74dp"
-            android:orientation="vertical"
-            android:background="#94A2A0">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25">
+
+            </TextView>
 
             <TextView
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Welcome to"
+                android:background="@drawable/rounded_background_white"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight=".5"
+                android:text="Register Now"
                 android:textColor="#202423"
-                android:textSize="17sp"
+                android:textSize="27sp"
                 android:textAlignment="center"
-                android:textStyle="italic"
+                android:textStyle="bold"
                 android:outlineSpotShadowColor="#707070"
                 android:layout_marginLeft="-2dp"
-                ></TextView>
-
-
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:shadowColor="#000000"
-                android:shadowDx="0"
                 android:shadowDy="3"
-                android:text="Vetcription"
-                android:textAlignment="center"
-                android:textColor="#78BEAB"
-                android:textSize="27sp"
-                android:textStyle="bold"
+                android:shadowDx="0"
                 android:shadowRadius="6"
-                android:outlineSpotShadowColor="#707070"
-
                 ></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".25">
+
+            </TextView>
+
 
         </LinearLayout>
 
@@ -70,6 +69,44 @@
             <EditText
                 android:padding="5dp"
                 android:layout_marginTop="50dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:hint="Enter Your Name"
+                android:textAlignment="center"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:background="@drawable/rounded_background"
+                android:inputType="textPersonName">
+
+            </EditText>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4">
+
+            </TextView>
+
+            <EditText
+                android:padding="5dp"
+                android:layout_marginTop="30dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
@@ -105,7 +142,7 @@
 
             <EditText
                 android:padding="5dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="6"
@@ -127,6 +164,7 @@
 
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,12 +178,11 @@
             </TextView>
 
             <Button
-                android:id="@+id/login"
                 android:layout_marginTop="50dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight=".4"
-                android:text="Login"
+                android:layout_weight=".6"
+                android:text="Register"
                 android:textColor="#ffffff"
                 android:background="@drawable/rounded_background"
                 android:shadowRadius="6">
@@ -160,18 +197,6 @@
             </TextView>
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/intent_to_register"
-            android:layout_marginTop="50dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Not a member? Sign Up Now"
-            android:textStyle="bold"
-            android:textColor="#090909"
-            android:textAlignment="center">
-
-        </TextView>
 
 
 
