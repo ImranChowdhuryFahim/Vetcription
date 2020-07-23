@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Medicine"
+    android:layout_margin="10dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/add_trade_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="trade_name"
+            android:inputType="textAutoComplete"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/add_compostion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="composition"
+            android:inputType="textAutoComplete"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/add_trade_dose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="trade_dose"
+            android:inputType="textAutoComplete"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/add_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="company"
+            android:inputType="textAutoComplete"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/add_generic_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="generic_name"
+            android:inputType="textAutoComplete"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/add_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="comments"
+            android:inputType="textAutoComplete"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/add_pack_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="pack_size"
+            android:inputType="textAutoComplete"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/add_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:hint="details"
+            android:inputType="textAutoComplete"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+             />
+
+    </LinearLayout>
+
+</RelativeLayout>
