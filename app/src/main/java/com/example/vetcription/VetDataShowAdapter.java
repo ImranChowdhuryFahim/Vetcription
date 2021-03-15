@@ -16,7 +16,7 @@ import java.util.List;
 public class VetDataShowAdapter extends RecyclerView.Adapter<VetDataShowAdapter.WordViewHolder> {
 
     class WordViewHolder extends RecyclerView.ViewHolder {
-        private final TextView trade_name,trade_dos,company,composition;
+        private final TextView trade_name,trade_dos,company,composition,generic_name,pack_size,comments,details;
 
         private WordViewHolder(View itemView) {
             super(itemView);
@@ -24,6 +24,10 @@ public class VetDataShowAdapter extends RecyclerView.Adapter<VetDataShowAdapter.
             trade_dos= itemView.findViewById(R.id.trade_dos);
             company=itemView.findViewById(R.id.company);
             composition=itemView.findViewById(R.id.composition);
+            generic_name=itemView.findViewById(R.id.generic_name);
+            pack_size=itemView.findViewById(R.id.pack_size);
+            comments=itemView.findViewById(R.id.comments);
+            details=itemView.findViewById(R.id.details);
         }
     }
 
@@ -46,6 +50,10 @@ public class VetDataShowAdapter extends RecyclerView.Adapter<VetDataShowAdapter.
             holder.composition.setText(current.getComposition());
             holder.trade_dos.setText(current.getTrade_dose());
             holder.company.setText(current.getCompany());
+            holder.generic_name.setText(current.getGeneric_name());
+            holder.pack_size.setText(current.getPack_size());
+            holder.details.setText(current.getDetails());
+            holder.comments.setText(current.getComments());
         } else {
             // Covers the case of data not being ready yet.
             holder.trade_name.setText("No Word");

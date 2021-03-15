@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Add_Medicine"></activity>
+        <activity android:name=".Doc_Registration_Activity"></activity>
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Add_Medicine" />
         <activity android:name=".VetDataShow" />
-        <activity android:name=".Dashboard" />
         <activity android:name=".Registration_Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>

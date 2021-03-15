@@ -28,7 +28,7 @@ public abstract class Vet_Database extends RoomDatabase {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             Vet_Database.class, "word_database")
-                            //.addCallback(sRoomDatabaseCallback)
+                            .createFromAsset("database/data.sqlite")
                             .build();
                 }
             }

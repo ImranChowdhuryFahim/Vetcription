@@ -8,7 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.vetcription.Database.Veterinary_DataModel;
@@ -20,14 +23,16 @@ public class VetDataShow extends AppCompatActivity {
     public static final int NEW_WORD_ACTIVITY_REQUEST_CODE = 1;
 
     private Vet_ViewModel viewModel;
-    private FloatingActionButton floatingActionButton;
+//    private FloatingActionButton floatingActionButton;
+    private EditText search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vet_data_show);
+        search=findViewById(R.id.search);
         viewModel=new ViewModelProvider(this).get(Vet_ViewModel.class);
-        floatingActionButton=findViewById(R.id.fab);
+//        floatingActionButton=findViewById(R.id.fab);
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
         final VetDataShowAdapter adapter = new VetDataShowAdapter(this);
         recyclerView.setAdapter(adapter);
@@ -40,13 +45,35 @@ public class VetDataShow extends AppCompatActivity {
             }
         });
 
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+        search.addTextChangedListener(new TextWatcher() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(VetDataShow.this, Add_Medicine.class);
-                startActivityForResult(intent, NEW_WORD_ACTIVITY_REQUEST_CODE);
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                viewModel.getSearched_data("%"+charSequence.toString()+"%").observe(VetDataShow.this, new Observer<List<Veterinary_DataModel>>() {
+                    @Override
+                    public void onChanged(List<Veterinary_DataModel> veterinary_dataModels) {
+                        adapter.setWords(veterinary_dataModels);
+                    }
+                });
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
             }
         });
+//        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(VetDataShow.this, Add_Medicine.class);
+//                startActivityForResult(intent, NEW_WORD_ACTIVITY_REQUEST_CODE);
+//            }
+//        });
 
 
 

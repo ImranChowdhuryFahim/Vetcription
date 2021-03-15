@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Vet_Repository {
     private Vet_Dao vet_dao;
-    private LiveData<List<Veterinary_DataModel>> allData;
+    private LiveData<List<Veterinary_DataModel>> allData,searched_data;
 
     public Vet_Repository(Application application)
     {
@@ -51,7 +51,10 @@ public class Vet_Repository {
     {
         return allData;
     }
-
+    public  LiveData<List<Veterinary_DataModel>> getSearched_data(String search)
+    {
+        return vet_dao.getSearcheddata(search);
+    }
 
 
 }

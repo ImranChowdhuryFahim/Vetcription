@@ -13,7 +13,7 @@ import java.util.List;
 
 public class Vet_ViewModel extends AndroidViewModel {
     private Vet_Repository repository;
-    private LiveData<List<Veterinary_DataModel>> allData;
+    private LiveData<List<Veterinary_DataModel>> allData,searched_data;
     public Vet_ViewModel(@NonNull Application application) {
         super(application);
         repository=new Vet_Repository(application);
@@ -24,7 +24,8 @@ public class Vet_ViewModel extends AndroidViewModel {
     {
         return allData;
     }
-
+    LiveData<List<Veterinary_DataModel>> getSearched_data(String search)
+    { return repository.getSearched_data(search); }
     public void update(Veterinary_DataModel vd)
     {
         repository.update(vd);

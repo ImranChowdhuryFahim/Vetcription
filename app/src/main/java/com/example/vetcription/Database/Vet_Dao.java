@@ -27,5 +27,8 @@ public interface Vet_Dao {
 
     @Query("SELECT * FROM vet_data ORDER BY id DESC")
     LiveData<List<Veterinary_DataModel>> getAlldata();
+
+    @Query("SELECT * FROM vet_data WHERE trade_name LIKE :search OR generic_name LIKE :search")
+    LiveData<List<Veterinary_DataModel>> getSearcheddata(String search);
 }
 
