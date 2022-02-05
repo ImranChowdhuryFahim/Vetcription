@@ -17,7 +17,8 @@
         <activity android:name=".Add_Medicine" />
         <activity android:name=".VetDataShow" />
         <activity android:name=".Registration_Activity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
