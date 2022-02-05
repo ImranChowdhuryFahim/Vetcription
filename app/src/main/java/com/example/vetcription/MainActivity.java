@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,VetDataShow.class));
+                startActivity(new Intent(MainActivity.this,New_login.class));
             }
         });
     }

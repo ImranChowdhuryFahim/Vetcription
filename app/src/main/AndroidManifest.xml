@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Doc_Registration_Activity"></activity>
+        <activity
+            android:name=".New_login"
+            android:exported="false" />
+        <activity android:name=".Doc_Registration_Activity" />
         <activity
             android:name=".Dashboard"
             android:label="@string/title_activity_dashboard"
@@ -17,7 +20,8 @@
         <activity android:name=".Add_Medicine" />
         <activity android:name=".VetDataShow" />
         <activity android:name=".Registration_Activity" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
