@@ -30,11 +30,16 @@ public class New_login extends AppCompatActivity {
         sign_up_doctor=findViewById(R.id.sign_up_doctor);
         sign_up_user=findViewById(R.id.sign_up_user);
         root=findViewById(R.id.root);
-        animation();
         sign_up_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(New_login.this,user_registration.class));
+            }
+        });
+        sign_up_doctor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(New_login.this,doc_regi_page.class));
             }
         });
     }

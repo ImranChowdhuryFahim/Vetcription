@@ -15,14 +15,14 @@ public class user_registration extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_registration);
-        name=findViewById(R.id.name);
-        mobile_no=findViewById(R.id.mobile_no);
-        email=findViewById(R.id.email);
+        setContentView(R.layout.activity_user_regi);
+        name=findViewById(R.id.user_name);
+        mobile_no=findViewById(R.id.user_mobile_no);
+        email=findViewById(R.id.user_email);
         password=findViewById(R.id.user_regi_password);
         confirm_password=findViewById(R.id.user_regi_confirm_password);
         sign_up=findViewById(R.id.user_regi_sign_up);
-        animation();
+
 
     }
 
