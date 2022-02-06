@@ -3,7 +3,9 @@ package com.example.vetcription;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -29,6 +31,12 @@ public class New_login extends AppCompatActivity {
         sign_up_user=findViewById(R.id.sign_up_user);
         root=findViewById(R.id.root);
         animation();
+        sign_up_user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(New_login.this,user_registration.class));
+            }
+        });
     }
 
     private void animation() {

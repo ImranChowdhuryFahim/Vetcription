@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/emon/Vetcription/app/src/main/res/drawable/baseline_lock_white_18dp.xml" value="0.131" />
+        <entry key="..\:/Users/emon/Vetcription/app/src/main/res/drawable/lock.xml" value="0.131" />
+        <entry key="..\:/Users/emon/Vetcription/app/src/main/res/drawable/mail.xml" value="0.131" />
+        <entry key="..\:/Users/emon/Vetcription/app/src/main/res/drawable/phone.xml" value="0.131" />
         <entry key="..\:/Users/emon/Vetcription/app/src/main/res/drawable/profile.xml" value="0.131" />
         <entry key="..\:/Users/emon/Vetcription/app/src/main/res/layout/activity_dashboard.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/emon/Vetcription/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/emon/Vetcription/app/src/main/res/layout/activity_new_login.xml" value="0.22" />
+        <entry key="..\:/Users/emon/Vetcription/app/src/main/res/layout/activity_new_login.xml" value="0.2" />
         <entry key="..\:/Users/emon/Vetcription/app/src/main/res/layout/activity_registration.xml" value="0.1" />
+        <entry key="..\:/Users/emon/Vetcription/app/src/main/res/layout/activity_user_registration.xml" value="0.33" />
         <entry key="..\:/Users/emon/Vetcription/app/src/main/res/layout/activity_vet_data_show.xml" value="0.20416666666666666" />
       </map>
     </option>
