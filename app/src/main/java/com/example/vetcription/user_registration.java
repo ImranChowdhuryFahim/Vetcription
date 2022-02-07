@@ -2,7 +2,9 @@ package com.example.vetcription;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -22,6 +24,13 @@ public class user_registration extends AppCompatActivity {
         password=findViewById(R.id.user_regi_password);
         confirm_password=findViewById(R.id.user_regi_confirm_password);
         sign_up=findViewById(R.id.user_regi_sign_up);
+
+        sign_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(user_registration.this,New_user_dashboard.class));
+            }
+        });
 
 
     }

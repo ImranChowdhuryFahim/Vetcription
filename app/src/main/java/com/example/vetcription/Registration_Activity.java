@@ -18,7 +18,7 @@ public class Registration_Activity extends AppCompatActivity {
         doc_reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(Registration_Activity.this,Doc_Registration_Activity.class);
+                Intent intent= new Intent(Registration_Activity.this, doc_Registration_Activity.class);
                 startActivity(intent);
             }
         });

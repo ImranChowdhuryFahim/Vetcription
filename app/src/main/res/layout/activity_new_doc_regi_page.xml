@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img"
-    tools:context=".doc_regi_page">
+    tools:context=".new_doc_regi_page">
 
     <EditText
         android:alpha="0.8"

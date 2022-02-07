@@ -9,9 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
-            android:name=".doc_regi_page"
+            android:name=".New_doc_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".New_user_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".new_doc_regi_page"
             android:exported="false" />
         <activity
             android:name=".user_registration"
@@ -19,7 +24,7 @@
         <activity
             android:name=".New_login"
             android:exported="false" />
-        <activity android:name=".Doc_Registration_Activity" />
+        <activity android:name=".doc_Registration_Activity" />
         <activity
             android:name=".Dashboard"
             android:label="@string/title_activity_dashboard"
