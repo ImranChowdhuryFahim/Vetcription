@@ -10,8 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
-
-import com.example.vetcription.R;
+import android.widget.Toast;
 
 public class New_login extends AppCompatActivity {
     EditText user_name,password;
@@ -30,6 +29,24 @@ public class New_login extends AppCompatActivity {
         sign_up_doctor=findViewById(R.id.sign_up_doctor);
         sign_up_user=findViewById(R.id.sign_up_user);
         root=findViewById(R.id.root);
+        log_in.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String value=password.getText().toString();
+
+
+                if(value.equals("1"))
+                {
+
+                    startActivity(new Intent(New_login.this, New_user_dashboard.class));
+                }
+                if(value.equals("2"))
+                {
+                    startActivity(new Intent(New_login.this, New_doc_dashboard.class));
+                }
+            }
+        });
         sign_up_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +56,7 @@ public class New_login extends AppCompatActivity {
         sign_up_doctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(New_login.this,doc_regi_page.class));
+                startActivity(new Intent(New_login.this, new_doc_regi_page.class));
             }
         });
     }
