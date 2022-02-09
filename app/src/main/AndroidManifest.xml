@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Pending_request"
+            android:exported="false" />
+        <activity
+            android:name=".Nearby"
+            android:exported="false" />
+        <activity
+            android:name=".Disease"
+            android:exported="false" />
+        <activity
+            android:name=".new_search_disease"
+            android:exported="false" />
+        <activity
+            android:name=".new_search_medicine"
+            android:exported="false" />
+        <activity
             android:name=".New_doc_dashboard"
             android:exported="false" />
         <activity
