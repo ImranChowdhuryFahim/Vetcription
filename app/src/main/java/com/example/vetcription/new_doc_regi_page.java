@@ -9,14 +9,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class new_doc_regi_page extends AppCompatActivity {
     EditText name,regi_num,mobile_no,email,password,confirm_password;
     Button sign_up;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_doc_regi_page);
+        mAuth = FirebaseAuth.getInstance();
         //assign
         name=findViewById(R.id.doc_name);
         regi_num=findViewById(R.id.doc_regi);
@@ -32,5 +36,7 @@ public class new_doc_regi_page extends AppCompatActivity {
 
             }
         });
+
+
     }
 }

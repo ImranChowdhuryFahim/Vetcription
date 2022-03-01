@@ -23,7 +23,7 @@ public class New_user_dashboard extends AppCompatActivity {
         search_medicine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(New_user_dashboard.this,new_search_medicine.class));
+                startActivity(new Intent(New_user_dashboard.this,VetDataShow.class));
             }
         });
         search_disease.setOnClickListener(new View.OnClickListener() {
