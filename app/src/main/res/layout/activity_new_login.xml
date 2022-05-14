@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:adjustViewBounds="true"
-    android:background="@drawable/login_bg"
+    android:background="#fff"
     android:scaleType="fitXY"
     tools:context=".New_login"
     android:id="@+id/root">
@@ -46,65 +46,70 @@
 
     </EditText>
 
-    <Button
+    <soup.neumorphism.NeumorphButton
+        android:gravity="center"
         android:id="@+id/forget_password"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:alpha="0.8"
-        android:background="@drawable/rounded_background"
+        android:background="@drawable/rounded_background_white"
         android:text="Forget Password"
-        android:textColor="#fff"
+        android:textColor="#000"
+        app:neumorph_shapeType="basin"
         app:layout_constraintBottom_toTopOf="@id/guideline9"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintStart_toStartOf="@+id/guideline17"
         app:layout_constraintTop_toTopOf="@id/guideline8">
 
-    </Button>
+    </soup.neumorphism.NeumorphButton>
 
-    <Button
+    <soup.neumorphism.NeumorphButton
+        android:gravity="center"
         android:id="@+id/log_in"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:alpha="0.8"
         android:background="@drawable/rounded_background"
         android:text="Log In"
-        android:textColor="#fff"
+        android:textColor="#000"
+        app:neumorph_shapeType="basin"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintEnd_toStartOf="@+id/guideline16"
         app:layout_constraintStart_toStartOf="@+id/guideline15"
         app:layout_constraintTop_toTopOf="@+id/guideline10">
 
-    </Button>
+    </soup.neumorphism.NeumorphButton>
 
-    <Button
+    <soup.neumorphism.NeumorphButton
+        android:gravity="center"
         android:id="@+id/sign_up_doctor"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:alpha="0.8"
         android:background="@drawable/rounded_background"
         android:text="Sign up Doctor"
-        android:textColor="#fff"
+        android:textColor="#000"
+        app:neumorph_shapeType="basin"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/guideline14"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline12">
 
-    </Button>
+    </soup.neumorphism.NeumorphButton>
 
-    <Button
+    <soup.neumorphism.NeumorphButton
         android:id="@+id/sign_up_user"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:alpha="0.8"
-        android:background="@drawable/rounded_background"
         android:text="Sign Up User"
-        android:textColor="#fff"
+        android:gravity="center"
+        android:textColor="#000000"
+        app:neumorph_shapeType="basin"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline14"
         app:layout_constraintTop_toTopOf="@+id/guideline12">
 
-    </Button>
+    </soup.neumorphism.NeumorphButton>
 
 
     <androidx.constraintlayout.widget.Guideline

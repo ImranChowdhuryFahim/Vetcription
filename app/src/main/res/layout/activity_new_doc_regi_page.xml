@@ -4,8 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/doctor_img"
+    android:background="#ecf0f3"
     tools:context=".new_doc_regi_page">
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:neumorph_shapeType="basin"
+        app:layout_constraintBottom_toTopOf="@+id/guideline46"
+        app:layout_constraintEnd_toStartOf="@+id/guideline42"
+        app:layout_constraintStart_toStartOf="@+id/guideline41"
+        app:layout_constraintTop_toTopOf="@+id/guideline45">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="Test"
+            android:layout_marginLeft="5dp"
+            android:drawableStart="@drawable/profile">
+
+        </EditText>
+
+
+    </soup.neumorphism.NeumorphCardView>
+
 
     <EditText
         android:alpha="0.8"
@@ -112,19 +135,20 @@
 
     </EditText>
 
-    <Button
+    <soup.neumorphism.NeumorphButton
         android:id="@+id/doc_sign_up"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/rounded_background"
         android:text="Sign Up"
-        android:textColor="#fff"
+        android:textColor="#000"
+        android:gravity="center"
+        android:background="@drawable/rounded_background_white"
         app:layout_constraintBottom_toTopOf="@+id/guideline60"
         app:layout_constraintEnd_toStartOf="@+id/guideline44"
         app:layout_constraintStart_toStartOf="@+id/guideline43"
         app:layout_constraintTop_toTopOf="@+id/guideline59">
 
-    </Button>
+    </soup.neumorphism.NeumorphButton>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline41"
@@ -159,7 +183,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.14" />
+        app:layout_constraintGuide_percent="0.1" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline46"
         android:layout_width="wrap_content"
@@ -244,7 +268,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.84" />
+        app:layout_constraintGuide_percent="0.8" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline60"
