@@ -27,7 +27,7 @@ public class new_doc_regi_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_doc_regi_page);
+        setContentView(R.layout.test);
         mAuth = FirebaseAuth.getInstance();
         //assign
         name=findViewById(R.id.doc_name);
